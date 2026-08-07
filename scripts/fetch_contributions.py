@@ -36,42 +36,43 @@ def parse_days(html: str) -> list[dict]:
     soup = BeautifulSoup(html, "html.parser")
     days = []
 
-    # GitHub's markup has changed shape over the years; this handles both the
-    # older <rect class="ContributionCalendar-day"> and newer <td> layouts.
     cells = soup.select("td.ContributionCalendar-day, rect.ContributionCalendar-day")
+    
+    # Map tooltips to their target cell IDs if possible
+    tooltips = {}
+    for tip in soup.select("tool-tip"):
+        target_id = tip.get("for")
+        if target_id:
+            tooltips[target_id] = tip.get_text(strip=True)
+
     for cell in cells:
         date = cell.get("data-date")
         if not date:
             continue
-        level = cell.get("data-level")
+            
+        count = None
+        # Try data-count
         count_attr = cell.get("data-count")
         if count_attr is not None:
             count = int(count_attr)
         else:
-            tooltip_id = cell.get("aria-labelledby") or cell.get("id")
-            count = None  # fallback below uses tooltip text if present
+            # Fallback to tooltip text
+            cell_id = cell.get("id")
+            text = tooltips.get(cell_id, "")
+            # Text is typically "N contributions on Month D, YYYY"
+            parts = text.split(" ")
+            if parts and parts[0].isdigit():
+                count = int(parts[0])
+            else:
+                count = 0
+
         days.append(
             {
                 "date": date,
-                "level": int(level) if level is not None else None,
+                "level": int(cell.get("data-level")) if cell.get("data-level") else 0,
                 "count": count,
             }
         )
-
-    # Some layouts put the count in a paired <tool-tip> element instead of
-    # data-count; fill those in from tooltip text ("N contributions on ...").
-    if any(d["count"] is None for d in days):
-        tooltip_text = {}
-        for tip in soup.select("tool-tip, .sr-only"):
-            tid = tip.get("id")
-            if tid:
-                tooltip_text[tid] = tip.get_text(strip=True)
-        for cell, d in zip(cells, days):
-            if d["count"] is None:
-                tid = cell.get("id")
-                text = tooltip_text.get(tid, "")
-                digits = "".join(ch for ch in text.split(" ")[0] if ch.isdigit())
-                d["count"] = int(digits) if digits else 0
 
     days.sort(key=lambda d: d["date"])
     return days
