@@ -1,0 +1,43 @@
+<svg viewBox="0 0 370 420" width="370" height="420" xmlns="http://www.w3.org/2000/svg">
+  <!-- Terminal window background -->
+  <rect x="0" y="0" width="370" height="420" rx="10" fill="#0d1117" stroke="#30363d"/>
+  <!-- Title bar -->
+  <rect x="0" y="0" width="370" height="34" rx="10" fill="#30363d"/>
+  <rect x="0" y="16" width="370" height="18" fill="#30363d"/>
+  <!-- Traffic lights -->
+  <circle cx="20" cy="17" r="6" fill="#ff5f56"/>
+  <circle cx="40" cy="17" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="17" r="6" fill="#27c93f"/>
+  <!-- Title text -->
+  <text x="185" y="21" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="12" fill="#c9d1d9">avi-ascii.svg</text>
+
+  <!-- ASCII art portrait placeholder (terminal green on dark) -->
+  <g font-family="Consolas, Menlo, monospace" font-size="11" fill="#39d353">
+    <text x="20" y="62">  ████████████████████  </text>
+    <text x="20" y="76"> ██                  ██ </text>
+    <text x="20" y="90"> ██   ◉         ◉   ██ </text>
+    <text x="20" y="104"> ██                  ██ </text>
+    <text x="20" y="118"> ██      ▄▄▄▄▄▄      ██ </text>
+    <text x="20" y="132"> ██    ▄█████████▄    ██ </text>
+    <text x="20" y="146">  ████████████████████  </text>
+    <text x="20" y="160">   ████████████████████ </text>
+    <text x="20" y="174">  ██  ████████████  ██  </text>
+    <text x="20" y="188"> ██  ██          ██  ██ </text>
+    <text x="20" y="202"> ██ ██            ██ ██ </text>
+    <text x="20" y="216"> ████              ████ </text>
+  </g>
+
+  <!-- Label below -->
+  <text x="185" y="256" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="13" fill="#58a6ff">divyal-11</text>
+  <text x="185" y="275" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="11" fill="#8b949e">[ replace with portrait SVG ]</text>
+
+  <!-- Animated cursor blink -->
+  <rect x="172" y="284" width="8" height="14" fill="#39d353" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Animated slide-in for the whole content -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.1s" dur="0.5s" fill="freeze"/>
+  </g>
+</svg>
