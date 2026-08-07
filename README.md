@@ -7,6 +7,9 @@
 
 <br>
 
+# 💫 About Me:
+Currently working on: AI/full-stack projects (LangGraph/RAG pipelines, Next.js apps). Currently learning: Agentic AI workflows & backend system design. Looking for help with: Full-stack, frontend, and AI engineering internships. Ask me about: Next.js, RAG pipelines, LangChain/LangGraph. Fun intro line: Final-year CS (AIML) student at IIIT Nagpur, graduating 2027 — I build and ship full-stack + AI projects.
+
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/divyalsurse/) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:divyalsurse21@gmail.com)
 
