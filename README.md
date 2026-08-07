@@ -6,19 +6,11 @@
 <br><br>
 
 <h3><code>divyal-11@github ~ $ whoami</code></h3>
-<table>
-  <tr>
-    <td valign="top"><img src="./avi-ascii.svg" width="370" /></td>
-    <td valign="top"><img src="./info-card.svg" width="490" /></td>
-  </tr>
-</table>
+<img src="./info-card.svg" width="650" />
 
 </div>
 
 <br>
-
-# 💫 About Me:
-Currently working on: AI/full-stack projects (LangGraph/RAG pipelines, Next.js apps). Currently learning: Agentic AI workflows & backend system design. Looking for help with: Full-stack, frontend, and AI engineering internships. Ask me about: Next.js, RAG pipelines, LangChain/LangGraph. Fun intro line: Final-year CS (AIML) student at IIIT Nagpur, graduating 2027 — I build and ship full-stack + AI projects.
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/divyalsurse/) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:divyalsurse21@gmail.com)
@@ -37,4 +29,4 @@ Currently working on: AI/full-stack projects (LangGraph/RAG pipelines, Next.js a
 ---
 [![](https://komarev.com/ghpvc/?username=divyal-11&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Terminal-style header (ASCII portrait + info card + heatmap) generated with a custom SVG pipeline; rest proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<!-- Terminal-style header generated with a custom SVG pipeline; rest proudly created with GPRM ( https://gprm.itsvg.in ) -->
