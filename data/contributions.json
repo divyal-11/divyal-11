@@ -1,42 +1,7 @@
 {
   "username": "divyal-11",
-  "generated_at": "2026-08-15T06:58:33.591395Z",
+  "generated_at": "2026-08-16T06:59:46.625755Z",
   "days": [
-    {
-      "date": "2025-08-10",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-08-11",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-08-12",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-08-13",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-08-14",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-08-15",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-08-16",
-      "level": 0,
-      "count": 0
-    },
     {
       "date": "2025-08-17",
       "level": 0,
@@ -1855,12 +1820,17 @@
     {
       "date": "2026-08-15",
       "level": 1,
-      "count": 1
+      "count": 2
+    },
+    {
+      "date": "2026-08-16",
+      "level": 0,
+      "count": 0
     }
   ],
   "stats": {
-    "total_last_year": 174,
-    "current_streak": 10,
+    "total_last_year": 175,
+    "current_streak": 0,
     "longest_streak": 10,
     "best_day": {
       "date": "2026-08-07",
@@ -1880,7 +1850,7 @@
       "2026-05": 0,
       "2026-06": 28,
       "2026-07": 54,
-      "2026-08": 88
+      "2026-08": 89
     }
   }
 }
