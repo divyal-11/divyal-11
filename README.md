@@ -1,4 +1,4 @@
-<div align="center">
+<!-- <div align="center">
 
 <h3><code>divyal-11@github ~ $ ./contributions.sh</code></h3>
 <img src="./contrib-heatmap.svg" width="860" />
@@ -27,4 +27,4 @@ Currently working on: AI/full-stack projects (LangGraph/RAG pipelines, Next.js a
 ---
 [![](https://komarev.com/ghpvc/?username=divyal-11&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Terminal-style heatmap header; rest proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<!-- Terminal-style heatmap header; rest proudly created with GPRM ( https://gprm.itsvg.in ) --> -->
